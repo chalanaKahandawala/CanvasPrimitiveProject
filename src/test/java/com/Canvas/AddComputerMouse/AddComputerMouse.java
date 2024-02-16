@@ -11,17 +11,22 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AddComputerMouse {
-	
+	@Test
 	public static void main(String[] args) throws InterruptedException, IOException {
 		String username = "";
 		String pw = "";
+		String xpathRoseHoldings = "//div[@data-key='7e9857a3-060f-4097-9aec-8e2e623305aa']";
+		String xpathNavSpaces = "//li[@class='SideBarNavItem navItem'][2]";
+		String xpathLevel1 = "//div[@title='Level 1']";
 		String xpathDockBtn = "//div[@title='Dock Catalog']//div[@class='container']";
 		String xpathCatalogPanel = "//div[@title='Catalog Panel']";
 		String xpathDIComputer = "//div[@data-id='614846a5-a871-4caf-9fdd-af8cd713be10']";  
 		String xpathCanvas = "//div[@id='canvas-div']";
 		String xpathDIMouse = "//div[@data-id='e4572fe0-6114-46b7-a3a3-62d097dc1028']"; 
+		
 		System.setProperty("webdriver.chrome.driver", "F:/Automation/chromedriver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
@@ -66,10 +71,10 @@ public class AddComputerMouse {
 		btnLogin.click();
 		
 		//Wait till element present
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-key='7e9857a3-060f-4097-9aec-8e2e623305aa']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathRoseHoldings)));
 		
 		//Capture Element checkbox Rose Holdings
-		WebElement chkbxRoseHoldings = driver.findElement(By.xpath("//div[@data-key='7e9857a3-060f-4097-9aec-8e2e623305aa']"));
+		WebElement chkbxRoseHoldings = driver.findElement(By.xpath(xpathRoseHoldings));
 		
 		//Select check box
 		if (!chkbxRoseHoldings.isSelected()) {
@@ -83,10 +88,10 @@ public class AddComputerMouse {
 		btnHamberger.click();
 		
 		//Wait till element present
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='SideBarNavItem navItem'][2]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathNavSpaces)));
 						
 		//Capture element spaces 
-		WebElement navSpaces= driver.findElement(By.xpath("//li[@class='SideBarNavItem navItem'][2]"));
+		WebElement navSpaces= driver.findElement(By.xpath(xpathNavSpaces));
 		
 		//Wait till element to be clickable
 		wait.until(ExpectedConditions.elementToBeClickable(navSpaces));
@@ -95,10 +100,10 @@ public class AddComputerMouse {
 		navSpaces.click();
 		
 		//Wait till element present
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@title='Level 1']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathLevel1)));
 		
 		//Click card view
-		WebElement vbxHeader = driver.findElement(By.xpath("//div[@title='Level 1']"));
+		WebElement vbxHeader = driver.findElement(By.xpath(xpathLevel1));
 		
 		//Wait till element to be clickable
 		wait.until(ExpectedConditions.elementToBeClickable(vbxHeader));
@@ -124,7 +129,7 @@ public class AddComputerMouse {
 		//Capture element Catalog panel
 		WebElement btnCatalogPanel = driver.findElement(By.xpath(xpathCatalogPanel)); 
 		
-		Thread.sleep(15000);
+		Thread.sleep(16000);
 		
 		//Wait till element to be clickable
 		wait.until(ExpectedConditions.elementToBeClickable(btnCatalogPanel));
@@ -132,7 +137,7 @@ public class AddComputerMouse {
 		//Click on catalog panel
 		btnCatalogPanel.click();
 		
-		//Thread.sleep(20);
+		Thread.sleep(20);
 		
 		//Wait till element present
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathDockBtn)));
@@ -142,6 +147,7 @@ public class AddComputerMouse {
 		
 		//Wait till element to be clickable
 		//wait.until(ExpectedConditions.elementToBeClickable(btnDockCatalog));
+		Thread.sleep(20);
 		
 		//Click on Dock button
 		btnDockCatalog.click();
@@ -163,11 +169,15 @@ public class AddComputerMouse {
 		//drag and drop computer on canvas
 		actions.dragAndDrop(computerIcon,canvas).build().perform();
 		
+		Thread.sleep(20);
+		
 		//Capture element
 		WebElement mouseIcon =driver.findElement(By.xpath(xpathDIMouse));
 		
 		//drag and drop computer on canvas
-		actions.dragAndDrop(mouseIcon,computerIcon).build().perform();
+		actions.dragAndDrop(mouseIcon,canvas).build().perform();
+		
+		Thread.sleep(20);
 		
 		// Extract the images of the dropped mouse and computer icons from the canvas element 
 		String droppedMouseImage = (String) ((JavascriptExecutor) driver).executeScript("return arguments[0].toDataURL('image/png').substring(21);",canvas); 
