@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/testng/testng/5.8/testng-5.8-jdk15.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/auto-service-annotations-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/byte-buddy-1.14.11.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/checker-qual-3.41.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/error_prone_annotations-2.23.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/failsafe-3.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/failureaccess-1.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/guava-33.0.0-jre.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/j2objc-annotations-2.8.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-api-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-api-events-1.34.1-alpha.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-context-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-exporter-logging-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-extension-incubator-1.34.1-alpha.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-common-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-extension-autoconfigure-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-extension-autoconfigure-spi-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-logs-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-metrics-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-sdk-trace-1.34.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/opentelemetry-semconv-1.23.1-alpha.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-api-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-api-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-chrome-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-chrome-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-chromium-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-chromium-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v85-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v85-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v119-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v119-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v120-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v120-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v121-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-devtools-v121-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-edge-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-edge-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-firefox-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-firefox-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-http-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-http-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-ie-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-ie-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-java-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-java-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-json-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-json-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-manager-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-manager-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-os-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-os-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-remote-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-remote-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-safari-driver-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-safari-driver-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-support-4.17.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitHub/Accu.nopCommerce/lib/selenium-support-4.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chala/Downloads/sikulixide-2.0.5.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
